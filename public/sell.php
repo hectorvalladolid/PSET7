@@ -13,6 +13,21 @@
         {
             apologize("Please enter the stock symbol.");
         }
+        else if ($_POST["shares"]== NULL) 
+        {
+            apologize("Empty share field, retry.");
+        }
+        
+        $stock = lookup($_POST["symbol"]);
+        if ($stock == 0)
+        {
+            apologize("Invalid stock symbol.");
+        }
+        
+        if (preg_match("/^\d+$/", $_POST["shares"]) == NULL)
+        {
+            apologize("You must enter a positive integer.");
+        }
         
         $stock = lookup($_POST["symbol"]);
         $shares = CS50::query("SELECT shares FROM Portfolio WHERE user_id = ? AND symbol = ?", $_SESSION["id"], $_POST["symbol"]);

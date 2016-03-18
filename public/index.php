@@ -23,6 +23,6 @@
    }
    
     // render portfolio
-    render("portfolio.php", ["positions" => $positions, "title" => "Portfolio"]);
+    render("portfolio.php", ["positions" => $positions, "cash" => $cash, "title" => "Portfolio"]);
 
 ?><?php>

@@ -1,3 +1,13 @@
-<h2><style= "arial"></style></style><?= $stock["name"] ?> </h2>
-<h2><?= $stock["symbol"] ?> </h2>
-Price: $<?= $stock["price"] ?>
+<h1><?= $stock["name"]?></h1>
+    Price: $<?= $stock["price"]?>
+    <div class="form-group">
+        <a focus class="btn btn-primary" type="submit" style="color: white;" href="buy.php?symbol=<?=$stock["symbol"]?>">
+            Buy stock
+        </a>
+    </div>
+    
+    <div class="form-group">
+        <a focus class="btn btn-primary" type="submit" style="color: white;" href="sell.php=<?=$stock["symbol"]?>">
+            Sell Stock
+        </a>
+    </div>
