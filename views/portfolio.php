@@ -4,7 +4,7 @@
     
     ?>
 </h4>
-<table border="2" style="width:100% color: blue;"class="table table-striped">
+<table border="2" style="width:100% color: blue;"class="table table-hover">
     <thead>
         
         <tr>
