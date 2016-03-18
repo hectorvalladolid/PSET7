@@ -1,6 +1,7 @@
 <h4>
     <?php
     print("Add money to your account");
+    
     ?>
 </h4>
 <table border="2" style="width:100% color: blue;"class="table table-striped">
