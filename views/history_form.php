@@ -1,4 +1,5 @@
-<table border="1" style="width:100%"class="table table-striped">
+<body style="background-color: #7CFC00 	">
+<table border="1" style="width:100%" class="table table-striped table-hover">
 <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqDrAknlDHJQGv23Vdur2Tuo736i1zqiVhNFSqA0Sg0d1V7_b2" alt="Your history" class="img-thumbnail">
     <thead>
         <tr>
@@ -26,3 +27,4 @@
     ?>
     </tbody>
 </table>
+</body>

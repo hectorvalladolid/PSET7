@@ -31,7 +31,7 @@
         
         else
         {
-            CS50::query("INSERT INTO Portfolios (user_id, symbol, shares) VALUES(?, ?, ?) 
+            CS50::query("INSERT INTO Portfolio (user_id, symbol, shares) VALUES(?, ?, ?) 
                 ON DUPLICATE KEY UPDATE shares = shares + VALUES(shares)", $_SESSION["id"], $_POST["symbol"], $_POST["shares"]);
             CS50::query("UPDATE users SET cash = cash - ? WHERE id = ?", $cost, $_SESSION["id"]);
             CS50::query("INSERT INTO history (id, type, symbol, shares, price) VALUES (?, ?, ?, ?, ?)", $_SESSION["id"], $type, $_POST["symbol"], $_POST["shares"], $stock["price"]);
